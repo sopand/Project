@@ -19,4 +19,14 @@ public class FormController {
 	public String loginform() {
 		return "login";
 	}
+	
+	@GetMapping("/reservation")
+	public String reservationform() {
+		return "reservation";
+	}
+	
+	@GetMapping("/modal")
+	public String modalform() {
+		return "modal";
+	}
 }

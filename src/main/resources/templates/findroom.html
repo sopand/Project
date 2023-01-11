@@ -49,9 +49,9 @@
         html += `
 		<div class="findroom_img">
 			<a href="#" class="findroom_imghref">
-				<img src="/img/${row.room_img}" class="sli_img">
+				<img src="/img/${row.room_img}" class="sli_img" loading="lazy">
 			</a>
-			<a class="findroom_href" href="/reservation/${row.room_num}">
+			<a class="findroom_href" href="/rooms/${row.room_num}">
 				<div class="findroom_text">
 					<span>${row.room_name}</span>
 					<span>최대 인원:${row.room_person}명</span>

@@ -12,9 +12,8 @@ public interface RoomMapper {
 
 	void AddRoom(Room r);
 	List<Room> FindRoom(SearchDto params);
+	Room RoomDetail(int room_num);
 	
 	
-	
-
 	int FindRoomcnt();
 }

@@ -37,6 +37,10 @@
 		room LIMIT
 		#{pagination.limitStart},#{recordSize}
 	</select>
+	<select id="RoomDetail" parameterType="int" resultMap="RoomMap">
+		SELECT * FROM
+		room WHERE room_num=#{room_num}
+	</select>
 	<select id="FindRoomcnt" resultType="int">
 		SELECT COUNT(*) FROM room
 	</select>
